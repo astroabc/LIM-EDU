@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="vn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body class="">
+    <div class="menu-bar relative z-20 h-screen lg:hidden tab:w-[40%] mb:w-[50%] translate-x-[-100%] bg-slate-50 flex flex-col">
+        <a href="#" id="close-menu" class="close-menu flex flex-row-reverse gap-2 pr-3 py-3">
+            <div><i class="fa-solid fa-xmark"></i></div>
+            <div class="font-bold">Close</div>
+        </a>
+        <input class="w-full py-3 pl-4" type="search" name="" placeholder="Nhập thông tin tìm kiếm" id="">
+        <a class="p-3" href="../GioiThieu/doan.html">Giới thiệu</a>
+        <a class="p-3">Khóa Học</a>
+        <a class="p-3">Cẩm Nang Học Tập</a>
+        <a class="p-3">Học liệu</a>
+        <a class="p-3" href="../LienHe/LienHe.html">Liên hệ</a>
+    </div>
+    <div class="mb:w-[480px] bg-[#efede4] absolute z-10 top-0">
+        <div  class="flex flex-row h-16 w-screen items-center lg:px-[200px] tab:px-[100px] mb:px-[12px] my-2">
+            <div id="menu-out" class="lg:hidden tab:p-10 tab:cursor-pointer mb:basis-1/2"><i class="fa-sharp fa-solid fa-list text-3xl"></i></div>
+
+
+            <div class="basis-1/5 mb:basis-1/2"><img src="https://lim.edu.vn/wp-content/uploads/2022/12/logo-3.png" alt=""></div>
+            <div class="basis-1/2 flex justify-around list-none tab:invisible mb:hidden">
+                <li><a href="../GioiThieu/doan.html" class="hover:text-[#dc4434]">Giới thiệu</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-[#dc4434]">Khóa Học</a>
+                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    <ul class="list-none absolute mt-4 w-[200px] bg-white opacity-0 group-hover:opacity-100">
+                        <li class="ml-2 py-3"><a href="#">Ôn thi các cấp</a></li>
+                        <li class="ml-2 py-3"><a href="#">Ôn thi vào 10</a></li>
+                        <li class="ml-2 py-3"><a href="#">Ôn thi đại học</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" class="hover:text-[#dc4434]">Cẩm Nang Học Tập</a></li>
+                <li class="relative group">
+                    <a href="#" class="hover:text-[#dc4434]">Học Liệu</a>
+                    <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                    <ul class="list-none absolute mt-4 w-[200px] bg-white opacity-0 group-hover:opacity-100">
+                        <li class="ml-2 py-3">Môn Toán</li>
+                        <li class="ml-2 py-3">Môn Lý</li>
+                        <li class="ml-2 py-3">Môn Hóa</li>
+                        <li class="ml-2 py-3">Môn Anh</li>
+                        <li class="ml-2 py-3">Môn Văn</li>
+                        <li class="ml-2 py-3">Môn Sinh</li>
+                    </ul>
+                </li>
+                <li><a href="../LienHe/LienHe.html" class="hover:text-[#dc4434]">Liên Hệ</a></li>
+            </div>
+            <div class="basis-3/10 min-w-[350px] flex flex-1 justify-around items-center mb:hidden">
+                <div class=" text-sm">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#" class="text-base">Đăng ký / Đăng nhập</a>
+                </div>
+                <div class="">
+                    <button class="w-[165px] h-10 font-bold hover:bg-[#dc4434] hover:text-white hover:transition-shadow outline-none outline-offset-0 outline-[#dc4434] rounded-full">ĐĂNG KÍ HỌC THỬ</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-contain w-screen" style="background-image: url('https://lim.edu.vn/wp-content/uploads/2022/12/header-search-bk-2-1.png');">
+            <div class="flex flex-col w-screen h-[140px] py-40 items-center text-center justify-around">
+                <div class="text-6xl mb:text-4xl font-bold">LIM EDU</div>
+                <div class="text-3xl mb:text-2xl py-4">Hệ thống đào tạo chuyên nghiệp - Cộng đồng học tập tích cực</div>
+                <div>Đến với Lim Edu để trải nghiệm những phương pháp học tập hiệu quả nhất!</div>
+            </div>
+
+            <div class="flex flex-col items-center w-screen">
+                <input type="text" name="" id="" placeholder="Nhập thông tin bạn cần tìm" class="w-[1026px] tab:w-[800px] tab:pl-12 mb:h-12 mb:w-[350px] h-16 outline-none rounded-full lg:pl-8 mb:pl-3">
+                <img src="./assets/img/header-search.webp" alt="">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-3 grid-rows-1 gap-4 px-[250px] tab:px-[20px] py-20 mb:grid-cols-1 mb:grid-rows-3 mb:px-4">
+            <div class="col-span-1 flex gap-3">
+                <div class="basis-1/5 h-[90px] flex items-center justify-center rounded-full bg-[#84cdf0]"><img class="" src="https://lim.edu.vn/wp-content/uploads/2019/10/icon.png" alt=""></div>
+                <div class="basis-4/5">
+                    <div class="font-bold pb-4">10+ NĂM KINH NGHIỆM</div>
+                <div>Với lịch sử thành lập từ năm 2010, LIM Edu có 12 năm kinh nghiệm trong việc đào tạo, tư vấn giáo dục cho hàng ngàn học viên. Chính vì thế chúng tôi hiểu insights của các em thực sự cần điều gì.</div>
+                </div>
+            </div>
+
+            <div class="col-span-1 flex gap-3">
+                <div class="basis-1/5 h-[90px] flex items-center justify-center rounded-full bg-[#ffa0a0]"><img class="" src="https://lim.edu.vn/wp-content/uploads/2019/10/icon-2.png" alt=""></div>
+                <div class="basis-4/5">
+                    <div class="font-bold pb-4">TƯ VẤN MÙA THI</div>
+                <div>LIM Edu đã tổ chức hoạt động tư vấn mùa thi tại các điểm trường cấp 3 ở các tỉnh miền Bắc như: trường cấp 3 Đồ Sơn Hải Phòng, trường cấp 3 Từ Sơn Bắc Ninh, trường cấp 3 Nguyễn Trãi Hà Đông,…</div>
+                </div>
+            </div>
+
+            <div class="col-span-1 flex gap-3">
+                <div class="basis-1/5 h-[90px] flex items-center justify-center rounded-full bg-[#79d9c7]">
+                    <img class="" src="https://lim.edu.vn/wp-content/uploads/2019/10/icon-3.png" alt="">
+                </div>
+                <div class="basis-4/5">
+                    <div class="font-bold pb-4">TƯ VẤN MÙA THI</div>
+                    <div>Phối hợp cùng báo Dân Trí, VnExpress, Thanh niên,… các kênh VTV1-9, VOV,… tư vấn mua thi, nhận định và giải đề thi đại học,… giúp phụ huynh và học sinh được tư vấn và tương tác trực tiếp.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-2 grid-rows-1 gap-2 px-[350px] tab:px-[20px] py-20 mb:px-4 mb:grid-rows-2 mb:grid-cols-1">
+            <div class="col-span-1">
+                <img src="https://lim.edu.vn/wp-content/uploads/2019/10/img-1.png" alt="">
+            </div>
+            <div class="col-span-1">
+                <div class="py-6 mb:py-0 text-5xl font-bold">SỨ MỆNH</div>
+                <div class="">
+                    <p class="py-3">Sứ mệnh của chúng tôi là giúp hàng triệu học sinh lấy lại cảm hứng học tập, xây dựng sự đam mê và yêu thích học tập.</p>
+                    <p class="py-3">Học tập thực chất vô cùng thú vị nếu các em thấy mình tự tin, có khả năng chinh phục và làm chủ kiến thức, tự khắc các em sẽ đam mê và yêu thích học tập.</p>
+                    <p class="py-3">Việc lựa chọn đúng thầy cô, phương pháp học giúp các em giảm thiểu thời gian, công sức cũng như giảm tải áp lực tâm lí. Giúp các em có thêm nhiều thời gian dành cho gia đình.</p>
+                    <p class="py-3">Sứ mệnh của chúng tôi không chỉ là nơi học tập, mà còn là người bạn đồng hành, dẫn đường giúp các em nhanh chạm tay đến đỉnh cao tri thức.</p>
+                </div>
+                <div class="pt-8"><button class="w-[160px] outline-none bg-[#dc4434] p-3 text-white font-bold rounded-full hover:bg-white hover:text-black hover:outline-1 hover:outline-[#dc4434]">Xem Thêm</button></div>
+            </div>
+        </div>
+
+        <div class="px-[250px] tab:px-[20px] py-20 mb:px-4">
+            <div class="flex flex-col items-center justify-center py-8 mb:py-2">
+                <div class="py-6 text-4xl mb:text-3xl font-bold">KHÓA HỌC</div>
+                <div class="h-10 w-[800px] text-center mb:w-screen mb:mb-6">Danh sách các khóa học đang được giảng dạy tại trung tâm LIM EDU. Bấm vào mỗi khóa học để xem thêm các thông tin chi tiết về các khóa học của chúng tôi</div>
+            </div>
+            <div class="grid grid-cols-3 grid-rows-1 gap-2 py-4 mb:grid-cols-1 mb:items-center">
+                <div class="col-span-1 group mb:mx-auto">
+                    <div class="w-[297px] h-[377px]">
+                        <img src="https://lim.edu.vn/wp-content/uploads/2023/01/news_pisa_1-1024x675-1-342x252.jpg" alt="" class="rounded-t-lg">
+                        <div class="group-hover:bg-[#dc4434] h-[146px] flex flex-col items-center justify-evenly font-bold bg-white rounded-b-lg">
+                            <button>Ôn Thi Đại Học</button>
+                            <div class="text-[#dc4434] p-1 bg-slate-100 rounded-md">Khối A, A1, B, D</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-span-1 group mb:mx-auto">
+                    <div class="w-[297px] h-[377px]">
+                        <img src="https://lim.edu.vn/wp-content/uploads/2017/07/image-21-342x252.jpg" alt="" class="rounded-t-lg">
+                        <div class="group-hover:bg-[#dc4434] h-[146px] flex flex-col items-center justify-evenly font-bold bg-white rounded-b-lg">
+                            <button>Toán, Văn, Anh</button>
+                            <div class="text-[#dc4434] p-1 bg-slate-100 rounded-md">Toán, Văn, Anh</div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-span-1 group mb:mx-auto">
+                    <div class="w-[297px] h-[377px]">
+                        <img src="https://lim.edu.vn/wp-content/uploads/2023/01/001giamtai_2020072815321-342x252.jpg" alt="" class="rounded-t-lg">
+                        <div class="group-hover:bg-[#dc4434] h-[146px] flex flex-col items-center justify-evenly font-bold bg-white rounded-b-lg">
+                            <button>Toán, Văn, Anh</button>
+                            <div class="text-[#dc4434] p-1 bg-slate-100 rounded-md">Toán, Lý, Hóa, Sinh, Văn, Anh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-screen h-[758px] bg-[50%,100%] grid grid-cols-2 grid-rows-1 px-[287px] tab:px-[20px] mb:px-4 mb:grid-cols-1" style="background-image: url('https://lim.edu.vn/wp-content/uploads/2022/12/bk-skill-2.png');">
+            <div class="col-span-1">
+                <div class="">
+                    <div class="font-bold text-4xl py-3">LIM EDU</div>
+                    <div class="text-2xl py-3">được kiểm chứng bởi cộng đồng</div>
+                    <div class="mb-[20px]">Hành trình 12+ kinh nghiệm và cống hiến, với những thành quả đã đạt được, chúng tôi tự hào mang đến những giá trị và trải nghiệm học tập tích cực nhất cho học viên, hướng tới trở thành người bạn đồng hành tin cậy của các gia đình Việt Nam.</div>
+                </div>
+                <div class="mt-[100px]"><img src="https://lim.edu.vn/wp-content/uploads/2019/10/skill.png" alt=""></div>
+            </div>
+            <div class="col-span-1">
+
+            </div>
+        </div>
+
+        <div class="flex flex-row items-center justify-evenly bg-[#dc4434]">
+            <div class="py-8">
+                <div class="text-4xl w-[500px] text-center font-bold pt-4 text-white tab:text-3xl mb:text-3xl mb:w-screen">ĐĂNG KÍ HỌC THỬ HOÀN TOÀN MIỄN PHÍ</div>
+                <div class="flex flex-col justify-center items-center pt-10 gap-8 tab:gap-5">
+                    <div><input class="h-[49px] w-[353px] outline-none pl-4 rounded-lg" placeholder="Họ và Tên" type="text" name="" id=""></div>
+                    <div><input class="h-[49px] w-[353px] outline-none pl-4 rounded-lg" placeholder="Địa chỉ Email" type="text" name="" id=""></div>
+                    <div><input class="h-[49px] w-[353px] outline-none pl-4 rounded-lg" placeholder="Số điện thoại" type="text" name="" id=""></div>
+                    <div><button class="text-[#dc4434] bg-white py-3 px-5 rounded-full">ĐĂNG KÍ NGAY</button></div>
+                </div>
+            </div>
+            <div><img src="https://lim.edu.vn/wp-content/uploads/2019/10/contact-img.png" alt=""></div>
+        </div>
+
+        <div class="grid grid-cols-3 grid-rows-1 h-[420px] w-screen pt-[100px] px-[100px] tab:px-[20px] mb:px-4 mb:grid-cols-1 mb:grid-rows-4 mb:h-full">
+            <div class="col-span-1 w-[480px] h-full tab:hidden mb:row-span-1">
+                <div class="text-3xl py-6">CẨM NANG HỌC TẬP</div>
+                <div class="pb-12">Tổng hợp các bài viết, tài liệu học tâọ hữu ích với chủ đề các phương pháp học tập hiệu quả dành cho học sinh các cấp.</div>
+                <div><button class="w-[160px] outline-none bg-[#dc4434] p-3 text-white font-bold rounded-full hover:bg-white hover:text-black hover:outline-1 hover:outline-[#dc4434]">XEM THÊM</button></div>
+            </div>
+            <div class="col-span-2 grid grid-cols-3 tab:col-span-3 mb:row-span-3 mb:grid-cols-1 mb:gap-4">
+                <div class="col-span-1 w-[260px] hover:scale-110 duration-100 mb:mx-auto">
+                    <div><img class="rounded-t-lg" src="https://lim.edu.vn/wp-content/uploads/2023/01/lay-lai-goc-toan-hinh-9-on-thi-vao-10-302x212.jpg" alt=""></div>
+                    <div class="bg-white rounded-b-lg h-[111px] w-full px-4 flex items-center"><a href="#" class="text-[#dc4434] font-bold">Cách lấy lại gốc Toán lớp 9 ôn thi vào lớp 10</a></div>
+                </div>
+
+                <div class="col-span-1 w-[260px] hover:scale-110 duration-100 mb:mx-auto">
+                    <div><img class="rounded-t-lg" src="https://lim.edu.vn/wp-content/uploads/2023/01/lay-lai-goc-toan-hinh-8-1-302x212.jpg" alt=""></div>
+                    <div class="bg-white rounded-b-lg h-[111px] w-full px-4 flex items-center"><a href="#" class="text-[#dc4434] font-bold">Cách lấy lại gốc toán hình 8, bứt phá 8+ cho người mất gốc</a></div>
+                </div>
+
+                <div class="col-span-1 w-[260px] hover:scale-110 duration-100 mb:mx-auto">
+                    <div><img class="rounded-t-lg" src="https://lim.edu.vn/wp-content/uploads/2023/01/lay-lai-goc-toan-hinh-7-302x212.jpg" alt=""></div>
+                    <div class="rounded-b-lg bg-white h-[111px] w-full px-4 flex items-center"><a href="#" class="text-[#dc4434] font-bold">Cách lấy lại gốc Toán hình 7, bứt phá 8+ cho người mất gốc</a></div>
+                </div>
+            </div>
+        </div>
+
+            <div class="h-[681px] w-screen px-[100px] pt-24 tab:px-[20px] mb:px-4 mb:h-full">
+                <div class="h-[246px] flex flex-col ml-[80px]">
+                    <div class="text-3xl font-bold py-6">HỌC LIỆU</div>
+                    <div class="w-[352px]">Kho học liệu chất lượng miễn phí tất cả các khối lớp, được dày công xây dựng bởi các giáo viên tại trung tâm</div>
+                </div>
+                <div class="flex flex-row items-center justify-between mb:hidden">
+                    <button><i class="fa-sharp fa-solid fa-arrow-left text-4xl"></i></button>
+                    <div class="flex flex-row justify-between h-[290px] w-[1100px]">
+                        <div class=" relative h-[245px] w-[235px] bg-[#eec387] rounded-2xl">
+                            <div class="absolute top-8 left-8 font-bold text-white">MÔN TOÁN</div>
+                            <img class="absolute bottom-4 right-4 hover:scale-110 duration-100" src="https://lim.edu.vn/wp-content/uploads/2019/10/collection-2.png" alt="">
+                        </div>
+
+                        <div class=" relative h-[245px] w-[235px] bg-[#79d9c7] rounded-2xl mt-[43px]">
+                            <div class="absolute top-8 left-8 font-bold text-white">MÔN LÝ</div>
+                            <img class="absolute bottom-4 right-4 hover:scale-110 duration-100" src="https://lim.edu.vn/wp-content/uploads/2019/10/collection-4.png" alt="">
+                        </div>
+
+                        <div class="relative h-[245px] w-[235px] bg-[#ffa0a0] rounded-2xl">
+                            <div class="absolute top-8 left-8 font-bold text-white">MÔN HÓA</div>
+                            <img class="absolute bottom-4 right-4 hover:scale-110 duration-100"  src="https://lim.edu.vn/wp-content/uploads/2019/10/collection-1.png" alt="">
+                        </div>
+
+                        <div class=" relative h-[245px] w-[235px] bg-[#84cdf0] rounded-2xl mt-[43px]">
+                            <div class="absolute top-8 left-8 font-bold text-white">MÔN VĂN</div>
+                            <img class="absolute bottom-4 right-4 hover:scale-110 duration-100" src="https://lim.edu.vn/wp-content/uploads/2019/10/collection-2.png" alt="">
+                        </div>
+
+                        <div class=" relative h-[245px] w-[235px] bg-[#eec387] rounded-2xl hidden">
+                            <div class="absolute top-8 left-8 font-bold text-white">MÔN ANH</div>
+                            <img class="absolute bottom-4 right-4 hover:scale-110 duration-100" src="https://lim.edu.vn/wp-content/uploads/2019/10/collection-4.png" alt="">
+                        </div>
+
+                        <div class=" relative h-[245px] w-[235px] bg-[#79d9c7] rounded-2xl mt-[43px] hidden">
+                            <div class="absolute top-8 left-8 font-bold text-white">MÔN SINH</div>
+                            <img class="absolute bottom-4 right-4 hover:scale-110 duration-100" src="https://lim.edu.vn/wp-content/uploads/2019/10/collection-3.png" alt="">
+                        </div>
+                    </div>
+                    <button><i class="fa-sharp fa-solid fa-arrow-right text-4xl"></i></button>
+                </div>            
+            </div>
+
+
+            <div class="h-[454px] w-screen bg-white flex flex-col">
+                <div class="text-center text-3xl py-10">Cảm nhận học viên</div>
+                <div class="flex w-80 mx-auto justify-between pb-12">
+                    <img class="image-1 h-24 cursor-pointer" src="./assets/img/user1.png" alt="">
+                    <img class="image-2 h-24 cursor-pointer" src="./assets/img/user1.png" alt="">
+                    <img class="image-3 h-24 cursor-pointer" src="./assets/img/user1.png" alt="">
+                </div>
+
+                <div class="flex">
+                    <div class="w-screen text-center">
+                        <div class="content-text text-lg  w-[700px] h-[60px] mb:w-full m-auto text-gray-400">“Đừng so sánh bản thân với người khác. Làm như vậy là bạn đang tự xúc phạm mình đấy” - Bill Gates</div>
+                        <div class="content-name py-2 font-bold">Minh Trang <span class="font-normal">- Học sinh lớp 10 chuyên</span></div>
+                        <div><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i></div>
+                    </div>
+                    <!-- <div class="w-screen hidden">
+                        <div class="text-lg  w-[700px] h-[60px] m-auto text-gray-400">“Trong một thế giới đang thay đổi rất nhanh chóng, lộ trình duy nhất đưa bạn đến thất bại là không dám mạo hiểm” - Mark Zuckerberg</div>
+                        <div>Ngọc Hiếu <span>- Học sinh lớp 11</span></div>
+                        <div><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i></div>
+                    </div>
+                    <div class="w-screen hidden">
+                        <div class="text-lg  w-[700px] h-[60px] m-auto text-gray-400">“Thiên tài 1% là cảm hứng và 99% là mồ hôi” - Thomas Edison</div>
+                        <div>Huyền Nga <span>- Học sinh lớp 12</span></div>
+                        <div><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i><i class="fa-solid fa-star text-yellow-600"></i></div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="w-screen p-10 bg-[#dc4434] text-gray-500 flex mb:grid mb:grid-cols-1">
+                <div class="bg-no-repeat basis-1/3" style="background-image: url('https://lim.edu.vn/wp-content/themes/course-builder/assets/images/bk-footer-ct.png');">
+                    <div class="h-[280px] w-[304px] tab:w-[200px] flex flex-col gap-4 bg-white rounded-lg pt-6 pl-5 ml-12">
+                        <div class="h-16"><img src="https://lim.edu.vn/wp-content/uploads/2022/12/logo-3.png" alt=""></div>
+                            <div class="flex pl-3">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>0987654321</p>
+                            </div>
+                            <div class="flex pl-5"><p>cskh@lim.edu.vn</p></div>
+                            <div class="flex pl-3">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Ha Noi, Viet Nam</p>
+                            </div>
+                    </div>
+                </div>
+                <div class=" basis-1/3 flex flex-row text-white mb:py-4">
+                    <div class="basis-1/2 px-4">
+                        <div class="font-bold text-lg pb-4">BÀI VIẾT</div>
+                        <div class="pb-2"><a href="#">Lấy lại gốc toán hình 12, bứt phá điểm 7+ cho người mất gốc</a></div>
+                        <div class="pb-2"><a href="#">Cách học hóa 12 cho người mất gốc, bứt phá 8+</a></div>
+                        <div class="pb-2"><a href="#">Lựa chọn ngành học khối C phù hợp xu hướng 2023</a></div>
+                        <div><a href="#">Các phương pháp học tập hiệu quả</a></div>
+                    </div>
+                    <div class="basis-1/2 px-4">
+                        <div class="font-bold text-lg pb-4">LIM EDU</div>
+                        <div class="pb-2"><a href="#">Giới thiệu</a></div>
+                        <div class="pb-2"><a href="#">Khóa học</a></div>
+                        <div class="pb-2"><a href="#">Cẩm nang học tập</a></div>
+                        <div class="pb-2"><a href="#">Học liệu</a></div>
+                        <div class="pb-2"><a href="#">Chính sách và Điều khoản</a></div>
+                        <div><a href="#">Liên hệ</a></div>
+                    </div>
+                </div>
+
+                <div class="basis-1/3">
+                    <div class=" py-6">
+                        <a class="p-4 bg-slate-800 rounded-xl" href="#"><i class="fa-brands fa-apple"></i> APP STORE</a>
+                        <a class="p-4 bg-slate-800 rounded-xl" href="#"><i class="fa-brands fa-android"></i> GOOGLE PLAY</a>
+                    </div>
+                    <div class="text-xl font-bold text-white  mb:pt-2">ĐĂNG KÍ NHẬN TIN TỨC</div>
+                    <div class="w-[413px] text-white py-6">Nhập email của bạn để nhận được những thông tin hữu ích nhất từ Lim Edu.</div>
+                    <div class="pt-6">
+                        <input class="py-3 pl-6 w-[413px] mb:w-[300px] bg-[#dc4434] border-solid border-2 outline-white rounded-full relative" type="text" name="" id="" placeholder="Email">
+                        <button class="absolute font-bold h-[52px] rounded-full translate-x-[-100%] w-[100px] bg-white">ĐĂNG KÍ</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script src="./Feature/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,202 @@
+header {
+  background-image: url('./assets/4028065-scaled.jpg');
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content {
+  grid-column: 1 / 13;
+  grid-row: 1 / 4;
+  text-align: center;
+
+}
+
+.header-h1 {
+  grid-column: 1 / 7;
+  color: coral;
+  font-size: 60px;
+}
+
+.header-text {
+  grid-column: 7 / 13;
+  text-align: center;
+  font-size: 20px;
+}
+
+.header-hr {
+  width: 300px;
+}
+
+.grid-container {
+
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, minmax(250px, 1fr));
+
+  gap: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  grid-template-areas:
+    "image1 text1"
+    "text2 image2"
+    "image3 text3";
+
+}
+
+.grid-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.first-image {
+  grid-column: 1;
+  grid-row: 1 / 2;
+  grid-area: image1;
+
+}
+
+.first-text {
+  grid-column: 2;
+  grid-row: 1 / 2;
+  grid-area: text1;
+  align-self: center;
+}
+
+.second-image {
+  grid-column: 2;
+  grid-row: 2 / 3;
+  grid-area: image2;
+
+}
+
+.second-text {
+  grid-column: 1;
+  grid-row: 2 / 3;
+  grid-area: text2;
+  align-self: center;
+}
+
+.third-image {
+  grid-column: 1;
+  grid-row: 3 / 4;
+  grid-area: image3;
+
+}
+
+.third-text {
+  grid-column: 2;
+  grid-row: 3 / 4;
+  grid-area: text3;
+  align-self: center;
+}
+
+.flex-container {
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 100px;
+
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.description {
+  text-align: center;
+  font-size: 20px;
+}
+
+.flex-item {
+  display: flex;
+  justify-content: space-between;
+
+
+
+}
+
+.flex-item-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+
+
+}
+
+.student {
+  background-color: #0a0a0a8c;
+  text-align: center;
+  padding: 50px 200px;
+
+}
+
+.rounded-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.meta {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.icon {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly
+}
+
+.icon-contact {
+  color: white;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: #FF8C00;
+}
+
+@media only screen and (max-width: 740px) {
+  .grid-container {
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .flex-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex-item-text {
+    width: 100%;
+  }
+
+  .student-img {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .meta {
+    max-width: 100%;
+  }
+}
