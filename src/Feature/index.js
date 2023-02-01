@@ -30,3 +30,7 @@ menu_out.addEventListener('click', (e) => {
 close_menu.addEventListener('click', (e) => {
     menu_bar.classList.add("translate-x-[-100%]")
 })
+function scrollToForm(){
+     const form_regist = document.querySelector(".form-regist")
+     form_regist.scrollIntoView()
+}
